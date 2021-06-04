@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // plugin that creates slider
 import Slider from "nouislider";
@@ -100,27 +101,29 @@ export default function HomePage() {
           <GridContainer className="containermain">
             <GridContainer className="container-one">
               <Grid>
-                <Card className={classes.rootmain}>
-                  <CardActionArea>
-                    <div className="hovereffect">
-                      <img
-                        src="/img/car_vector.jpg"
-                        alt
-                        width={600}
-                        height={600}
+                <Link href="/carsPage">
+                  <Card className={classes.rootmain}>
+                    <CardActionArea>
+                      <div className="hovereffect">
+                        <img
+                          src="/img/car_vector.jpg"
+                          alt
+                          width={600}
+                          height={600}
+                        />
+                      </div>
+                      <GridListTileBar
+                        title="Name of the car1.1"
+                        subtitle="Heloo"
+                        // actionIcon={
+                        //   <IconButton className={classone.icon}>
+                        //     <StarIcon />
+                        //   </IconButton>
+                        // }
                       />
-                    </div>
-                    <GridListTileBar
-                      title="Name of the car1.1"
-                      subtitle="Heloo"
-                      // actionIcon={
-                      //   <IconButton className={classone.icon}>
-                      //     <StarIcon />
-                      //   </IconButton>
-                      // }
-                    />
-                  </CardActionArea>
-                </Card>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
             </GridContainer>
 

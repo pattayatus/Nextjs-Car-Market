@@ -25,7 +25,10 @@ import PageChange from "components/PageChange/PageChange.js";
 
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "../styles/css/index.css";
+import "../styles/css/carpage.css";
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);

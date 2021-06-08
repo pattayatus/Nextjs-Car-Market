@@ -44,15 +44,6 @@ export default function HeaderLinks(props) {
             <Link href="/profile">
               <a className={classes.dropdownLink}>Profile</a>
             </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Home2</a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Home2</a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Home2</a>
-            </Link>,
           ]}
         />
       </ListItem>
@@ -68,17 +59,8 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Search}
           dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Search1</a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Search2</a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Search3</a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>Search4</a>
+            <Link href="/SearchPage">
+              <a className={classes.dropdownLink}>SearchPage</a>
             </Link>,
           ]}
         />

@@ -129,98 +129,106 @@ export default function HomePage() {
 
             <GridContainer className="container-two">
               <Grid>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <div className="hovereffect">
-                      <img
-                        src="/img/car_vector.jpg"
-                        alt
-                        width={280}
-                        height={280}
+                <Link href="/carsPage">
+                  <Card className={classes.root}>
+                    <CardActionArea>
+                      <div className="hovereffect">
+                        <img
+                          src="/img/car_vector.jpg"
+                          alt
+                          width={280}
+                          height={280}
+                        />
+                      </div>
+                      <GridListTileBar
+                        title="Name of the car2.1"
+                        subtitle="Heloo"
+                        // actionIcon={
+                        //   <IconButton className={classone.icon}>
+                        //     <StarIcon />
+                        //   </IconButton>
+                        // }
                       />
-                    </div>
-                    <GridListTileBar
-                      title="Name of the car2.1"
-                      subtitle="Heloo"
-                      // actionIcon={
-                      //   <IconButton className={classone.icon}>
-                      //     <StarIcon />
-                      //   </IconButton>
-                      // }
-                    />
-                  </CardActionArea>
-                </Card>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid style={{ marginTop: "20px" }}>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <div className="hovereffect">
-                      <img
-                        src="/img/car_vector.jpg"
-                        alt
-                        width={280}
-                        height={280}
+                <Link href="/carsPage">
+                  <Card className={classes.root}>
+                    <CardActionArea>
+                      <div className="hovereffect">
+                        <img
+                          src="/img/car_vector.jpg"
+                          alt
+                          width={280}
+                          height={280}
+                        />
+                      </div>
+                      <GridListTileBar
+                        title="Name of the car2.2"
+                        subtitle="Heloo"
+                        // actionIcon={
+                        //   <IconButton className={classone.icon}>
+                        //     <StarIcon />
+                        //   </IconButton>
+                        // }
                       />
-                    </div>
-                    <GridListTileBar
-                      title="Name of the car2.2"
-                      subtitle="Heloo"
-                      // actionIcon={
-                      //   <IconButton className={classone.icon}>
-                      //     <StarIcon />
-                      //   </IconButton>
-                      // }
-                    />
-                  </CardActionArea>
-                </Card>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
             </GridContainer>
             <GridContainer className="container-two">
               <Grid>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <div className="hovereffect">
-                      <img
-                        src="/img/car_vector.jpg"
-                        alt
-                        width={280}
-                        height={280}
+                <Link href="/carsPage">
+                  <Card className={classes.root}>
+                    <CardActionArea>
+                      <div className="hovereffect">
+                        <img
+                          src="/img/car_vector.jpg"
+                          alt
+                          width={280}
+                          height={280}
+                        />
+                      </div>
+                      <GridListTileBar
+                        title="Name of the car3.1"
+                        subtitle="Heloo"
+                        // actionIcon={
+                        //   <IconButton className={classone.icon}>
+                        //     <StarIcon />
+                        //   </IconButton>
+                        // }
                       />
-                    </div>
-                    <GridListTileBar
-                      title="Name of the car3.1"
-                      subtitle="Heloo"
-                      // actionIcon={
-                      //   <IconButton className={classone.icon}>
-                      //     <StarIcon />
-                      //   </IconButton>
-                      // }
-                    />
-                  </CardActionArea>
-                </Card>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <div className="hovereffect">
-                      <img
-                        src="/img/car_vector.jpg"
-                        alt
-                        width={280}
-                        height={280}
+                <Link href="/carsPage">
+                  <Card className={classes.root}>
+                    <CardActionArea>
+                      <div className="hovereffect">
+                        <img
+                          src="/img/car_vector.jpg"
+                          alt
+                          width={280}
+                          height={280}
+                        />
+                      </div>
+                      <GridListTileBar
+                        title="Name of the car3.2"
+                        subtitle="Heloo"
+                        // actionIcon={
+                        //   <IconButton className={classone.icon}>
+                        //     <StarIcon />
+                        //   </IconButton>
+                        // }
                       />
-                    </div>
-                    <GridListTileBar
-                      title="Name of the car3.2"
-                      subtitle="Heloo"
-                      // actionIcon={
-                      //   <IconButton className={classone.icon}>
-                      //     <StarIcon />
-                      //   </IconButton>
-                      // }
-                    />
-                  </CardActionArea>
-                </Card>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
             </GridContainer>
           </GridContainer>

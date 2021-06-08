@@ -2,8 +2,6 @@ import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
-import { UncontrolledCarousel, Row, Col } from "reactstrap";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // @material-ui/core components
@@ -14,6 +12,7 @@ import Palette from "@material-ui/icons/Palette";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
+import SectionCarousel from "pages-sections/Components-Sections/SectionCarousel.js";
 // import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -36,7 +35,9 @@ import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
+import LocationOn from "@material-ui/icons/LocationOn";
 
+import Carousel from "react-slick";
 // icon
 import Icon from "@material-ui/core/Icon";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -53,40 +54,26 @@ const useStyles = makeStyles(styles);
 
 function handleClick(event) {
   event.preventDefault();
-  console.info("You clicked a breadcrumb.");
+  console.info("You clicked ");
 }
 
 export default function CarsPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+  };
+
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
-  const items = [
-    {
-      src: "/img/bg2.jpg",
-      altText: "Slide 1",
-      caption: "",
-      header: "",
-      key: "1",
-    },
-    {
-      src: "/img/bg3.jpg",
-      altText: "Slide 2",
-      caption: "",
-      header: "",
-      key: "2",
-    },
-    {
-      src: "/img/bg4.jpg",
-      altText: "Slide 3",
-      caption: "",
-      header: "",
-      key: "3",
-    },
-  ];
   const bull = <span className={classes.bullet}>•</span>;
-
+  const des = <span className={classes.dess}>-</span>;
   return (
     <div>
       <Header
@@ -104,17 +91,60 @@ export default function CarsPage(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <div className={classes.nameCar}>
-            <h3>Name of Car...</h3>
+          <div>
+            <Typography variant="h6" component="h2">
+              <Link color="inherit" href="/">
+                HomePage
+              </Link>
+              {des}
+              <Link color="inherit" href="/">
+                Search
+              </Link>
+              {des}
+              <Link color="inherit" href="/">
+                BMW
+              </Link>
+              {des}
+              <Link color="inherit" href="/">
+                8-Serie
+              </Link>
+              {des}
+              BMW 8-serie 2-door coupe grey
+            </Typography>
           </div>
           <GridContainer className="container-car">
             <Grid item xs={12} sm={6} className="container-car-one">
               <div className={classes.imageSlide}>
-                <Row>
-                  <Col md="12" className="mx-auto">
-                    <UncontrolledCarousel items={items} />
-                  </Col>
-                </Row>
+                <GridContainer>
+                  <GridItem>
+                    <Card carousel>
+                      <Carousel {...settings}>
+                        <div>
+                          <img
+                            src="/img/car-yellow.jpg"
+                            alt="First slide"
+                            className="slick-image"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/img/car-yellow.jpg"
+                            alt="Second slide"
+                            className="slick-image"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/img/car-yellow.jpg"
+                            alt="Third slide"
+                            className="slick-image"
+                          />
+                        </div>
+                      </Carousel>
+                    </Card>
+                  </GridItem>
+                </GridContainer>
+
                 <div className={classes.rootDes}>
                   <Typography variant="h4" gutterBottom>
                     Description
@@ -444,6 +474,11 @@ export default function CarsPage(props) {
               </div>
             </Grid>
           </GridContainer>
+          <>
+            <br />
+            <br />
+            <br />
+          </>
         </div>
       </div>
       <Footer />

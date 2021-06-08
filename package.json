@@ -49,6 +49,8 @@
     "react": "^17.0.2",
     "react-datetime": "3.0.4",
     "react-dom": "^17.0.2",
+    "react-select": "^4.3.1",
+    "react-select2-wrapper": "^1.0.4-beta6",
     "react-slick": "0.28.1",
     "react-slideshow-image": "^3.4.6",
     "reactstrap": "^8.9.0",
